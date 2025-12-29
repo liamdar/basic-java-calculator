@@ -1,8 +1,10 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
+        Random rdm = new Random();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Welcome to basic java calculator");
@@ -20,6 +22,10 @@ public class Main {
 
         if (type.equalsIgnoreCase("add")) {
             result = num1 + num2;
+        { else if (type.equalsIgnoreCase("power")) {
+            result = Math.pow(num1, num2);
+        { else if (type.equalsIgnoreCase("min")) {
+            result = Math.min(num1, num2);
         } else if (type.equalsIgnoreCase("rest")) {
             result = num1 - num2;
         } else if (type.equalsIgnoreCase("multi")) {

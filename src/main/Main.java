@@ -8,7 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Welcome to basic java calculator");
-        System.out.println("What type of calculation? (add, rest, multi, division)");
+        System.out.println("What type of calculation? (add, rest, multi, division, power, min)");
         String type = sc.nextLine();
 
         System.out.println("Enter the first number:");
@@ -22,9 +22,9 @@ public class Main {
 
         if (type.equalsIgnoreCase("add")) {
             result = num1 + num2;
-        { else if (type.equalsIgnoreCase("power")) {
+        } else if (type.equalsIgnoreCase("power")) {
             result = Math.pow(num1, num2);
-        { else if (type.equalsIgnoreCase("min")) {
+        } else if (type.equalsIgnoreCase("min")) {
             result = Math.min(num1, num2);
         } else if (type.equalsIgnoreCase("rest")) {
             result = num1 - num2;
